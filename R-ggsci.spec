@@ -6,18 +6,16 @@
 # autospec commit: 5905be9
 #
 Name     : R-ggsci
-Version  : 3.0.3
-Release  : 2
-URL      : https://cran.r-project.org/src/contrib/ggsci_3.0.3.tar.gz
-Source0  : https://cran.r-project.org/src/contrib/ggsci_3.0.3.tar.gz
+Version  : 3.1.0
+Release  : 3
+URL      : https://cran.r-project.org/src/contrib/ggsci_3.1.0.tar.gz
+Source0  : https://cran.r-project.org/src/contrib/ggsci_3.1.0.tar.gz
 Summary  : Scientific Journal and Sci-Fi Themed Color Palettes for
 Group    : Development/Tools
 License  : GPL-3.0
 Requires: R-ggplot2
 Requires: R-scales
 BuildRequires : R-ggplot2
-BuildRequires : R-gridExtra
-BuildRequires : R-reshape2
 BuildRequires : R-scales
 BuildRequires : buildreq-R
 # Suppress stripping binaries
@@ -36,10 +34,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1713890697
+export SOURCE_DATE_EPOCH=1716841995
 
 %install
-export SOURCE_DATE_EPOCH=1713890697
+export SOURCE_DATE_EPOCH=1716841995
 rm -rf %{buildroot}
 LANG=C.UTF-8
 CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -87,6 +85,7 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 /usr/lib64/R/library/ggsci/R/ggsci.rdx
 /usr/lib64/R/library/ggsci/R/sysdata.rdb
 /usr/lib64/R/library/ggsci/R/sysdata.rdx
+/usr/lib64/R/library/ggsci/WORDLIST
 /usr/lib64/R/library/ggsci/doc/ggsci-faq.R
 /usr/lib64/R/library/ggsci/doc/ggsci-faq.Rmd
 /usr/lib64/R/library/ggsci/doc/ggsci-faq.html
@@ -97,6 +96,7 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 /usr/lib64/R/library/ggsci/help/AnIndex
 /usr/lib64/R/library/ggsci/help/aliases.rds
 /usr/lib64/R/library/ggsci/help/figures/README-ggsci-aaas-1.png
+/usr/lib64/R/library/ggsci/help/figures/README-ggsci-bmj-1.png
 /usr/lib64/R/library/ggsci/help/figures/README-ggsci-cosmic-1.png
 /usr/lib64/R/library/ggsci/help/figures/README-ggsci-cosmic-2.png
 /usr/lib64/R/library/ggsci/help/figures/README-ggsci-cosmic-3.png
